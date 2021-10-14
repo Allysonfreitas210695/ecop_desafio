@@ -28,19 +28,12 @@ const HeaderContainer = styled.header`
   }
 `;
 
-const Logo = styled.div`
-  font-size: 20px;
-  font-weight: bold;
-  color: ${colors.white};
-  cursor: pointer;
-`;
-
 export const Header = () => {
   return (
     <div>
       <HeaderContainer>
-        <Logo>AllysonFlix</Logo>
-        <Link to="/" className="link_login">Login</Link >
+        <Link to="/" className="link_login">AllysonFlix</Link>
+        <Link to="/Login" className="link_login">Login</Link >
       </HeaderContainer>
     </div>
   );
