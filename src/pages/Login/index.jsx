@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { colors } from "../../../constants";
-import { Input } from "../../Input";
-import { Header } from "../../Header";
+import { colors } from "../../constants/constants";
+import { Input } from "../../components/Input";
+import { Header } from "../../components/Header";
 import { Link, useHistory } from "react-router-dom";
 
 
 const Form = styled.form`
-  width: 510px;
+  width: 400px;
   height: 520px;
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   position: relative;
   top: 105px;
   text-align: center;
-  border: 1px solid ${colors.white};
+  border: 1px solid ${colors.cyan};
   border-radius: 20px;
 
   .link_cadastro{
@@ -38,7 +38,7 @@ const Form = styled.form`
 
 const Title = styled.h1`
   font-size: 25px;
-  color: ${colors.white};
+  color: ${colors.blue};
   font-weight: bold;
   padding-top: 10px;
   margin: 32px 0px 28px 0px;
@@ -46,7 +46,7 @@ const Title = styled.h1`
 
 const Description = styled.h2`
   font-size: 20px;
-  color: ${colors.white};
+  color: ${colors.blue};
   font-weight: 500;
   margin: 0px 0px 30px 0px;
 `;
@@ -54,7 +54,7 @@ const Description = styled.h2`
 const Label = styled.label`
   font-size: 18px;
   font-weight: 400;
-  color: ${colors.white};
+  color: ${colors.blue};
   margin-top: 45px;
   display: inline-block;
   width: 60%;
@@ -116,7 +116,7 @@ export const Login = () => {
     event.preventDefault();
    
     if(email === teste.emailTeste && passWord === teste.senhaTeste){
-      history.push('/Home');
+      history.push('/');
     }else{
       alert('Login Invalido')
     }

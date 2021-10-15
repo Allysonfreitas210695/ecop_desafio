@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import styled from "styled-components";
-import { colors } from "../../constants";
+import { colors } from "../../constants/constants";
 import { useAppState } from '../../hooks/UseAppstate';
 import { MovieCard } from "../MovieCard";
 

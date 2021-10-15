@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Header } from '../Header';
-import { colors } from '../../constants';
+import { colors } from '../../constants/constants';
 import { Search } from '../Search';
 
 const Overlay = styled.div`
@@ -54,7 +54,7 @@ export const Banner = () => {
             compete in children's games for a tempting prize, but the stakes are
             deadly.
           </Description>
-          <Search></Search>
+          <Search/>
         </Content>
       </Overlay>
     </Container>

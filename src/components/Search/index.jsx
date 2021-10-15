@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const StyledSearch = styled.input`
@@ -10,6 +10,7 @@ const StyledSearch = styled.input`
 `;
 
 export const Search = () => {
-  return <StyledSearch placeholder="Search..."></StyledSearch>;
+  const [value, setValue] = useState('');
+  return <StyledSearch placeholder="Search..." onChange={(e) => setValue(e.target.value)} value={value}></StyledSearch>;
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IMG_BASE_URL } from '../../config/Api';
 
 const Card = styled.div`
   min-width: 280px;
@@ -19,7 +20,7 @@ const Card = styled.div`
 export const MovieCard = ({ item }) => {
   return (
     <Card>
-      <img src={IMG_BASE_URL+ item.poster_path}></img>
+      <img src={IMG_BASE_URL + item.poster_path}></img>
     </Card>
   )
 }
